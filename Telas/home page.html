@@ -8,60 +8,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-<style>
-        body {
-            font-family: 'Rethink Sans', sans-serif;
-            font-weight: 400;}
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Rethink Sans', sans-serif;
-            font-weight: 700;}
-        .font-regular {
-             font-family: 'Rethink Sans', sans-serif;
-            font-weight: 400;}
-        .font-bold {
-             font-family: 'Rethink Sans', sans-serif;
-            font-weight: 700;}
-        .bg-navy {
-        background-color: #030053 !important;}
-        .text-navy {
-        color: #030053 !important;}
-        .border-navy {
-        border-color: #030053 !important;}
-        .card-hover {
-        transition: background-color 0.3s, color 0.8s, transform 0.8s;}
-        .card-hover:hover {
-        background-color: #ffb52f !important;
-        color: #030053 !important;
-        animation: bounceUp 0.8s;
-        }
-        .card-hover:hover h2,
-        .card-hover:hover p {
-        color: #030053 !important;
-        }
-        @keyframes bounceUp {
-        0%   { transform: translateY(0); }
-        50%  { transform: translateY(-18px); }
-        100% { transform: translateY(0); }
-        }
-        .btn-comecar {
-        background-color: #fff;
-        color: #030053;
-        transition: background-color 0.3s, color 0.3s;
-        font-weight: 700;
-        }
-        .btn-comecar:hover {
-        background-color: #030053 !important;
-        color: #fff !important;
-        box-shadow: 0 0 16px 4px #ffb52f;
-    }
-    </style>
-    <link rel="icon" type="image/svg+xml" href="logo puc brasão.svg">
+<link rel="shortcut icon" href="../Recursos de Estilo/logo puc brasão.svg" type="image/x-icon">
+<link rel="stylesheet" href="home_page.css">
 </head>
 <body class="bg-gray-100 font-regular">
 <header class="flex justify-between items-center py-4 bg-navy text-white px-8">
-<div class="text-2xl font-superbold">
-    <img src="logo_puc_planner_fundoazul.svg" width="200px" style="border-radius: 20px;">
+<a href="home page.html">
+  <div class="text-2xl font-superbold">
+    <img src="../Recursos de Estilo/logo_puc_planner_fundoazul.svg" width="200px" style="border-radius: 20px;">
 </div>
+</a>
 <h1 class="text-3xl font-superbold" style="padding-left: -200px; margin-left: -200px;">Bem-vindo(a)!</h1>
 <button class="text-white">
 </button>
@@ -77,18 +33,24 @@
 <section class="bg-white py-16">
 <div class="container mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-<div class="bg-navy text-white p-8 rounded-lg shadow-lg transition-shadow duration-300 card-hover">
+<a href="consulta_disciplina1.html" target="_blank">
+  <div class="bg-navy text-white p-8 rounded-lg shadow-lg transition-shadow duration-300 card-hover">
 <h2 class="text-2xl mb-4">Consulte as disciplinas</h2>
 <p class="font-regular">Veja todas as matérias disponíveis para o seu curso e período.</p>
 </div>
+</a>
+<a href="fluxograma1.html" target="_blank">
 <div class="bg-navy text-white p-8 rounded-lg shadow-lg transition-shadow duration-300 card-hover">
 <h2 class="text-2xl mb-4">Crie um fluxograma</h2>
 <p class="font-regular">Visualize seu progresso e planeje seus próximos passos na graduação.</p>
 </div>
+</a>
+<a href="grade_horaria.html" target="_blank">
 <div class="bg-navy text-white p-8 rounded-lg shadow-lg transition-shadow duration-300 card-hover">
 <h2 class="text-2xl mb-4">Monte sua grade horária</h2>
 <p class="font-regular">Organize suas aulas de forma intuitiva e sem conflitos de horário.</p>
 </div>
+</a>
 </div>
 </div>
 </div>
@@ -97,7 +59,7 @@
 <footer class="bg-navy text-white">
 <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
 <div class="flex items-center">
-<img alt="LOGO PUC" class="w-20 h-40 pr-2" src="logo puc brasão.svg"/>
+<img alt="LOGO PUC" class="w-20 h-40 pr-2" src="../Recursos de Estilo/logo puc brasão.svg"/>
 <nav class="flex flex-wrap gap-x-10 gap-y-2 font-regular pl-10">
 <a class="hover:underline" href="https://sau.puc-rio.br/WebLoginPucOnline/LayoutLoginPucOnline/PaginasEstaticas/escolhaPerfil.html?ReturnUrl=%2f"target="_blank">SAU</a>
 <a class="hover:underline" href="https://www.ctc.puc-rio.br/"target="_blank">CTC</a>
