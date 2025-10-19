@@ -22,12 +22,17 @@
 </a>
 <h1 class="text-3xl font-superbold flex-1 text-center">Fluxograma</h1>
 
-<div style="width:200px"></div>
+<div style="width:200px" class="flex items-center justify-end">
+  <button id="download-pdf" class="bg-white text-blue-900 font-bold py-2 px-4 rounded shadow hover:opacity-90 flex items-center">
+    <span class="material-icons mr-2" aria-hidden="true" style="font-size:20px">download</span>
+    Baixar PDF
+  </button>
+</div>
 </header>
 <div class="container mx-auto px-4 max-w-6xl">
 <main class="py-8">
 <h2 class="text-center text-2xl superbold mb-12 text-blue-900">Curso: Engenharia da Computação</h2>
-<div class="relative h-[650px] w-full">
+<div id="flowchart" class="relative h-[650px] w-full">
 <a href="https://www.puc-rio.br/ferramentas/ementas/ementa.aspx?cd=CTC4002" target="_blank">
   <div class="flowchart-item" style="top: 20px; left: 2%;">CTC 4002</div>
 </a>
@@ -67,83 +72,119 @@
   <div class="flowchart-item" style="top: 540px; left: 50%;">EEL 7062</div>
   <div class="flowchart-item" style="top: 540px; left: 75%;">EEL 7010</div>
 </a>
-<svg class="absolute top-0 left-0 w-full h-full" style="z-index: -1;">
-<line stroke="#000080" stroke-width="2" x1="7%" x2="7%" y1="67px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="7%" x2="14%" y1="115px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="14%" x2="14%" y1="115px" y2="150px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="23%" x2="23%" y1="67px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="23%" x2="14%" y1="115px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="14%" x2="14%" y1="115px" y2="150px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="39%" x2="39%" y1="67px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="39%" x2="47%" y1="115px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="47%" x2="47%" y1="115px" y2="150px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="55%" x2="55%" y1="67px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="55%" x2="47%" y1="115px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="47%" x2="47%" y1="115px" y2="150px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="71%" x2="71%" y1="67px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="71%" x2="80%" y1="115px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="80%" x2="80%" y1="115px" y2="150px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="87%" x2="87%" y1="67px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="87%" x2="80%" y1="115px" y2="115px"></line>
-<line stroke="#000080" stroke-width="2" x1="80%" x2="80%" y1="115px" y2="150px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="14%" x2="14%" y1="195px" y2="240px"></line>
-<line stroke="#000080" stroke-width="2" x1="14%" x2="7%" y1="240px" y2="240px"></line>
-<line stroke="#000080" stroke-width="2" x1="7%" x2="7%" y1="240px" y2="280px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="14%" x2="14%" y1="195px" y2="240px"></line>
-<line stroke="#000080" stroke-width="2" x1="14%" x2="30%" y1="240px" y2="240px"></line>
-<line stroke="#000080" stroke-width="2" x1="30%" x2="30%" y1="240px" y2="280px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="47%" x2="47%" y1="195px" y2="300px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="47%" x2="50%" y1="300px" y2="300px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="80%" x2="80%" y1="195px" y2="280px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="7%" x2="7%" y1="325px" y2="370px"></line>
-<line stroke="#000080" stroke-width="2" x1="7%" x2="14%" y1="370px" y2="370px"></line>
-<line stroke="#000080" stroke-width="2" x1="14%" x2="14%" y1="370px" y2="410px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="30%" x2="30%" y1="325px" y2="370px"></line>
-<line stroke="#000080" stroke-width="2" x1="30%" x2="14%" y1="370px" y2="370px"></line>
-<line stroke="#000080" stroke-width="2" x1="14%" x2="14%" y1="370px" y2="410px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="30%" x2="30%" y1="330px" y2="370px"></line>
-<line stroke="#000080" stroke-width="2" x1="30%" x2="47%" y1="370px" y2="370px"></line>
-<line stroke="#000080" stroke-width="2" x1="47%" x2="47%" y1="370px" y2="410px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="55%" x2="55%" y1="325px" y2="370px"></line>
-<line stroke="#000080" stroke-width="2" x1="55%" x2="47%" y1="370px" y2="370px"></line>
-<line stroke="#000080" stroke-width="2" x1="47%" x2="47%" y1="370px" y2="410px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="80%" x2="80%" y1="325px" y2="410px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="14%" x2="14%" y1="455px" y2="500px"></line>
-<line stroke="#000080" stroke-width="2" x1="14%" x2="7%" y1="500px" y2="500px"></line>
-<line stroke="#000080" stroke-width="2" x1="7%" x2="7%" y1="500px" y2="540px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="47%" x2="47%" y1="455px" y2="500px"></line>
-<line stroke="#000080" stroke-width="2" x1="47%" x2="30%" y1="500px" y2="500px"></line>
-<line stroke="#000080" stroke-width="2" x1="30%" x2="30%" y1="500px" y2="540px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="47%" x2="47%" y1="460px" y2="500px"></line>
-<line stroke="#000080" stroke-width="2" x1="47%" x2="55%" y1="500px" y2="500px"></line>
-<line stroke="#000080" stroke-width="2" x1="55%" x2="55%" y1="500px" y2="540px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="80%" x2="80%" y1="455px" y2="540px"></line>
-
-<line stroke="#000080" stroke-width="2" x1="44%" x2="50%" y1="45px" y2="45px"></line>
-<line stroke="#000080" stroke-width="2" x1="60%" x2="66%" y1="45px" y2="45px"></line>
-</svg>
+<svg id="flowchart-svg" class="absolute top-0 left-0 w-full h-full" style="z-index: -1;"></svg>
 </div>
 </main>
 </div>
+<script>
+// Lista de conexões entre blocos (nome exato do texto do bloco)
+const connections = [
+  // Topo para segunda linha
+  ['CTC 4002', 'INF 1037'],
+  ['INF 7025', 'INF 1037'],
+  ['MAT 4162', 'INF 1009'],
+  ['MAT 4162', 'ENG 4010'],
+  ['ENG 4010', 'INF 1009'],
+  ['FIS 4001', 'CTC 4001'],
+  ['MAT 4161', 'CTC 4001'],
+
+  // Segunda para terceira linha
+  ['INF 1037', 'EEL 7020'],
+  ['INF 1037', 'EEL 7031'],
+  ['INF 1009', 'EEL 7040'],
+  ['CTC 4001', 'MAT 4225'],
+
+  // Terceira para quarta linha
+  ['EEL 7020', 'EEL 7032'],
+  ['EEL 7031', 'EEL 7051'],
+  ['EEL 7040', 'EEL 7051'],
+  ['MAT 4225', 'EEL 5105'],
+
+  // Quarta para quinta linha
+  ['EEL 7032', 'EEL 7042'],
+  ['EEL 7051', 'EEL 7052'],
+  ['EEL 7051', 'EEL 7062'],
+  ['EEL 5105', 'EEL 7010'],
+];
+
+function getBlockConnectionPoints(el) {
+  const rect = el.getBoundingClientRect();
+  const parentRect = el.offsetParent.getBoundingClientRect();
+  const x = rect.left - parentRect.left;
+  const y = rect.top - parentRect.top;
+  const w = rect.width;
+  const h = rect.height;
+  return {
+    top: { x: x + w/2, y: y },
+    bottom: { x: x + w/2, y: y + h },
+    left: { x: x, y: y + h/2 },
+    right: { x: x + w, y: y + h/2 },
+    center: { x: x + w/2, y: y + h/2 },
+    rect: { x, y, w, h }
+  };
+}
+
+function createOrthogonalConnection(a, b) {
+  const verticalThreshold = 50; // distância vertical mínima para considerar blocos em níveis diferentes
+  
+  // Se os blocos estão aproximadamente no mesmo nível vertical
+  if (Math.abs(a.center.y - b.center.y) < verticalThreshold) {
+    // Conexão horizontal (usando pontos left/right)
+    const isALeftOfB = a.center.x < b.center.x;
+    const start = isALeftOfB ? a.right : a.left;
+    const end = isALeftOfB ? b.left : b.right;
+    return `M ${start.x} ${start.y} L ${end.x} ${end.y}`;
+  }
+  // Se os blocos estão em níveis diferentes
+  else {
+    // Conexão vertical (usando pontos top/bottom)
+    const isAAboveB = a.center.y < b.center.y;
+    const start = isAAboveB ? a.bottom : a.top;
+    const end = isAAboveB ? b.top : b.bottom;
+    const midY = (start.y + end.y) / 2;
+    
+    // Criar path em L
+    return `M ${start.x} ${start.y} L ${start.x} ${midY} L ${end.x} ${midY} L ${end.x} ${end.y}`;
+  }
+}
+
+function drawConnections() {
+  const container = document.getElementById('flowchart');
+  const svg = document.getElementById('flowchart-svg');
+  if (!container || !svg) return;
+  svg.innerHTML = '';
+  
+  const blocks = {};
+  container.querySelectorAll('.flowchart-item').forEach(el => {
+    const text = el.textContent.trim();
+    blocks[text] = el;
+  });
+  
+  const w = container.offsetWidth;
+  const h = container.offsetHeight;
+  svg.setAttribute('width', w);
+  svg.setAttribute('height', h);
+  svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+  
+  connections.forEach(([from, to]) => {
+    const a = blocks[from];
+    const b = blocks[to];
+    if (!a || !b) return;
+    
+    const pointsA = getBlockConnectionPoints(a);
+    const pointsB = getBlockConnectionPoints(b);
+    
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', createOrthogonalConnection(pointsA, pointsB));
+    path.setAttribute('stroke', '#000080');
+    path.setAttribute('stroke-width', '2');
+    path.setAttribute('fill', 'none');
+    svg.appendChild(path);
+  });
+}
+window.addEventListener('DOMContentLoaded', drawConnections);
+window.addEventListener('resize', drawConnections);
+</script>
 <footer class="bg-navy text-white">
 <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
 <div class="flex items-center">
@@ -160,5 +201,76 @@
         </div>
 </footer>
 </div>
+
+<!-- Scripts para gerar PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+  (function(){
+    const btn = document.getElementById('download-pdf');
+    const element = document.getElementById('flowchart');
+    if (!btn || !element) return;
+
+    btn.addEventListener('click', async function () {
+      try {
+        // Redesenha conexões
+        if (typeof drawConnections === 'function') drawConnections();
+
+        // Aguarda um momento para garantir que o SVG foi redesenhado
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+        // Captura o elemento como imagem
+        const canvas = await html2canvas(element, {
+          scale: 2,
+          logging: false,
+          useCORS: true,
+          backgroundColor: '#ffffff',
+          onclone: function(clonedDoc) {
+            const clonedElement = clonedDoc.getElementById('flowchart');
+            if (clonedElement) {
+              // Força dimensões fixas no clone
+              const rect = element.getBoundingClientRect();
+              clonedElement.style.width = rect.width + 'px';
+              clonedElement.style.height = rect.height + 'px';
+              // Força redesenho no clone
+              if (typeof drawConnections === 'function') drawConnections();
+            }
+          }
+        });
+
+        // Cria PDF em orientação paisagem
+        const { jsPDF } = window.jspdf;
+        const pdf = new jsPDF({
+          orientation: 'landscape',
+          unit: 'px',
+          format: 'a4',
+        });
+
+        // Ajusta dimensões mantendo proporção
+        const imgWidth = pdf.internal.pageSize.getWidth();
+        const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+        // Adiciona a imagem ao PDF
+        pdf.addImage(
+          canvas.toDataURL('image/jpeg', 1.0),
+          'JPEG',
+          0,
+          0,
+          imgWidth,
+          imgHeight,
+          undefined,
+          'FAST'
+        );
+
+        // Salva o PDF
+        pdf.save('fluxograma.pdf');
+
+      } catch (e) {
+        console.error('Erro ao gerar PDF:', e);
+        alert('Não foi possível gerar o PDF. Por favor, tente novamente.');
+      }
+    });
+  })();
+</script>
 
 </body></html>
