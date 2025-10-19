@@ -1,0 +1,251 @@
+/* Variáveis de Cores e Fontes */
+:root {
+    --cor-institucional-azul: #030053; /* Azul Marinho Escuro (para cabeçalho/rodapé) */
+    --cor-destaque-amarelo: #ffae00; /* Amarelo/Laranja (para botão de ação) */
+    --cor-fundo: #f8f8f8; /* Fundo claro, quase branco */
+    --cor-texto-escuro: #333;
+    --cor-borda-input: #ccc;
+    --cor-sombra: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* -------------------- CABEÇALHO -------------------- */
+.cabecalho {
+    background-color: var(--cor-institucional-azul);
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px var(--cor-sombra);
+}
+
+.logo img {
+    height: 50px; /* Ajuste conforme o tamanho desejado da sua logo */
+    width: auto;
+    /* Não precisa de margin-right se não houver texto separado */
+}
+
+.titulo-pagina {
+    font-size: 20px;
+    font-weight: 550;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.espacador {
+    /* Mantém o alinhamento central do título */
+    width: 150px; 
+}
+
+/* -------------------- CONTEÚDO PRINCIPAL -------------------- */
+.conteudo-principal {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    /* Padrão de fundo suave (opcional, para replicar o estilo da imagem) */
+    background: url('testefundosetas.png');
+    background-size: 1000px 1000px;
+}
+
+.cadastro-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px var(--cor-sombra);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.titulo-formulario {
+    color: var(--cor-institucional-azul);
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Campos lado a lado */
+.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.row .half-width {
+    width: calc(50% - 7.5px);
+    margin-bottom: 0;
+}
+
+/* Estilo para cada campo de entrada */
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--cor-borda-input);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group:focus-within {
+    border-color: var(--cor-destaque-amarelo);
+    box-shadow: 0 0 0 1px var(--cor-destaque-amarelo);
+}
+
+.icon {
+    color: var(--cor-institucional-azul);
+    margin-right: 15px;
+    font-size: 16px;
+    width: 18px;
+    text-align: center;
+}
+
+.formulario input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 1px 0;
+    color: var(--cor-texto-escuro);
+}
+
+.formulario input::placeholder {
+    color: #999;
+}
+
+/* Botão de Cadastro */
+.botao-cadastro {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-destaque-amarelo);
+    color: var(--cor-institucional-azul);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 740;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.botao-cadastro:hover {
+    background-color: #e3a000; /* Amarelo um pouco mais escuro */
+}
+
+/* Link para login */
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--cor-texto-escuro);
+}
+
+.login-link a {
+    color: var(--cor-institucional-azul);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------- RODAPÉ -------------------- */
+.rodape {
+    background-color: var(--cor-institucional-azul); /* Cor de fundo escura, típica de rodapés */
+    color: white; /* Cor do texto (branco) */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+    margin-top: auto
+}
+
+/* Container principal para o layout Flexbox */
+.rodape-conteudo {
+    /* Define o Flexbox para alinhar os itens horizontalmente */
+    display: flex; 
+    /* Distribui o espaço: Logo na extrema esquerda, Copyright na extrema direita, Links no centro */
+    justify-content: space-between; 
+    /* Centraliza os itens verticalmente */
+    align-items: center;
+    
+    max-width: 1200px; /* Largura máxima (ajuste conforme seu design) */
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    padding: 0 20px; /* Padding nas laterais para telas menores */
+    
+    min-height: 80px; /* Altura mínima para o rodapé */
+}
+
+/* Estilo para a Logo */
+.rodape-logo img {
+    height: 100px; /* Ajuste a altura da logo conforme necessário */
+    width: auto;
+    display: block;
+}
+
+/* Estilo para os Links (Navegação) */
+.rodape-links-container {
+    display: flex; /* Garante que os links fiquem em linha */
+    gap: 10px; /* Espaço entre os links */
+}
+
+.rodape-links-container a {
+    color: white; /* Cor para os links (azul claro, por exemplo) */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 0.9em;
+    padding: 0 5px; /* Espaçamento ao redor dos links */
+    white-space: nowrap; /* Evita quebras de linha desnecessárias nos links */
+}
+
+.rodape-links-container a:hover {
+    color: #ffae00; /* Cor ao passar o mouse */
+}
+
+.rodape-links-container span {
+    color: white; /* Cor para o separador "|" */
+}
+
+/* Estilo para o Copyright */
+.rodape-copyright .copyright {
+    font-size: 0.8em;
+    color: white;
+    margin: 0;
+    text-align: right;
+    white-space: nowrap; /* Evita quebra de linha no texto de copyright */
+}
+
+/* Responsividade (Ajuste para telas menores como celulares) */
+@media (max-width: 768px) {
+    .rodape-conteudo {
+        /* Muda a direção para coluna em telas pequenas */
+        flex-direction: column; 
+        /* Centraliza tudo */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px; /* Espaçamento entre os blocos (logo, links, copyright) */
+    }
+
+    .rodape-links-container {
+        /* Permite que os links quebrem linha se necessário */
+        flex-wrap: wrap; 
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .rodape-copyright .copyright {
+        text-align: center;
+    }
+}
