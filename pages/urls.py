@@ -1,4 +1,5 @@
-from django.urls import path
+
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -10,4 +11,5 @@ urlpatterns = [
     path('grade-horaria-js/', views.grade_horaria_js),
     path('consulta-disciplina-1/', views.consulta_disciplina1),
     path('consulta-disciplina-2/', views.consulta_disciplina2),
+
 ]
