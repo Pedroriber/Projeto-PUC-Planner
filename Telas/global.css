@@ -49,6 +49,8 @@ footer .container > div:last-child {
     footer .container > div:last-child {
         text-align: right;
         margin-top: 0;
+        white-space: nowrap;
+        padding-left: 2rem;
     }
 }
 
