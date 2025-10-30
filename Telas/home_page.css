@@ -43,3 +43,10 @@ body {
         color: #fff !important;
         box-shadow: 0 0 16px 4px #ffb52f;
     }
+        footer {
+        padding: 2rem 0;
+        }
+        footer .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        }
